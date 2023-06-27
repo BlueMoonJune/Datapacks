@@ -1,0 +1,154 @@
+{
+    "type": "origins:multiple",
+
+    "spectator": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "block_condition": {
+            "type":"origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:nether_portal"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:end_portal"
+                }
+            ]
+        },
+        "render_type":"none"
+    },
+
+    "flight": {
+        "type":"origins:creative_flight"
+    },
+
+    "invulnerability": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "outOfWorld",
+            "inverted": true
+        }
+    },
+
+    "prevent_block_selection": {
+        "type": "origins:prevent_block_selection",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type":"origins:in_tag",
+                    "tag": "datalingorigin:whitelist"
+                }
+            ],
+            "inverted":true
+        }
+    },
+    "prevent_item_use": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "prevent_entity_use": {
+        "type": "origins:prevent_entity_use",
+        "bientity_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "no_damage":{
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "no_collision":{
+        "type": "origins:prevent_entity_collision"
+    },
+    "drop_items": {
+        "type":"origins:action_over_time",
+        "entity_action": {
+            "type": "origins:drop_inventory",
+            "inventory_type": "inventory",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "datalingorigin:whitelist"
+                },
+                "inverted":true
+            }
+        },
+        "interval": 1
+    },
+    "undetectable": {
+        "type":"origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:visibility 0"
+        },
+        "interval": 1
+    },
+    "no_pickup":{
+        "type":"origins:action_over_time",
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "bientity_condition": {
+                "type":"origins:target_condition",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type":"origins:entity_type",
+                            "entity_type": "minecraft:item"
+                        },
+                        {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Item: {id:\"computercraft:pocket_computer_normal\"}}"
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Item: {id:\"computercraft:pocket_computer_advanced\"}}"
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Item: {id:\"create:empty_schematic\"}}"
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Item: {id:\"create:schematic\"}}"
+                                }
+                            ],
+                            "inverted": true
+                        }
+                    ]
+                }
+            },
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "function datalingorigin:no_pickup"
+                }
+            }
+        },
+        "interval": 1
+    },
+    "prevent_break": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -1
+        }
+    },
+
+    "name": "Ethereal",
+    "description": "You aren't on this plane! You are free to move around and can not die, but you cant interact with anything but computers."
+}

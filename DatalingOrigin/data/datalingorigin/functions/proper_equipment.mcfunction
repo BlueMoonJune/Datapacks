@@ -1,0 +1,2 @@
+execute unless entity @s[scores={dataling.hasTurtle=0..}] at @s run setblock ~ ~ ~ computercraft:turtle_advanced{RightUpgrade:"minecraft:diamond_pickaxe",LeftUpgrade:"minecraft:crafting_table"}
+execute unless entity @s[scores={dataling.hasTurtle=0..}] run scoreboard players add @s dataling.hasTurtle 1

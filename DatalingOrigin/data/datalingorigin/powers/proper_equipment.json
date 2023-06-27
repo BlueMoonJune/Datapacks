@@ -1,0 +1,10 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function datalingorigin:proper_equipment"
+    },
+    "name": "Proper Equipment",
+    "description": "You start out with an Advanced Mining Crafty Turtle, the bridge between you and the world!",
+    "interval":1
+}

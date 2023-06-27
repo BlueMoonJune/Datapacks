@@ -1,0 +1,10 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function datalingorigin:energy_transfer"
+    },
+    "name": "Energy Transfer",
+    "description": "You somehow can give power to advanced turtles by resting inside of them.",
+    "interval":1
+}

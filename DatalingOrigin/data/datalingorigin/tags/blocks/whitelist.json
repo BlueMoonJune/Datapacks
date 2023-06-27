@@ -1,0 +1,11 @@
+{
+    "values": [
+        "computercraft:computer_normal",
+        "computercraft:computer_advanced",
+        "computercraft:turtle_normal",
+        "computercraft:turtle_advanced",
+        "#minecraft:beds",
+        "create:schematic_table",
+        "create:deployer"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:\"computercraft:turtle_advanced\"}}] run function datalingorigin:reboot"
+    },
+    "name": "Reboot",
+    "description": "You can set up dropped advanced turtles",
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false
+    }
+}

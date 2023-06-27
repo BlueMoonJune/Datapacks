@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "datalingorigin:ethereal",
+        "datalingorigin:proper_equipment",
+        "datalingorigin:reboot",
+        "datalingorigin:energy_transfer",
+        "datalingorigin:visuals"
+    ],
+    "icon": "computercraft:pocket_computer_advanced",
+    "order": 4,
+    "impact": 3,
+    "name": "Dataling",
+    "description": "Datalings are mysterious entities, as they do not exist on this plane of reality and only can be observed through their interaction with digital technology."
+}
