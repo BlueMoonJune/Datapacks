@@ -1,0 +1,16 @@
+{
+    "type": "origins:multiple",
+    "capable": {
+        "type": "origins:modify_harvest",
+        "allow": true
+    },
+    "reasonable": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "name": "Crystals break speed bonus",
+            "value": 0.75,
+            "operation": "addition"
+        }
+    }
+    
+}

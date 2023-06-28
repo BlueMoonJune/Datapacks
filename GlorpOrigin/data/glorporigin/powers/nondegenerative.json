@@ -1,0 +1,21 @@
+{
+    "type": "origins:multiple",
+    "ceaselesshunger": {
+        "type": "origins:modify_food",
+        "always_edible": true
+    },
+    "nonexhaustive": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "name": "Never Exhausting",
+            "operation": "multiply_base",
+            "value": -1.0
+        }
+    },
+    "nonregenerative": {
+        "type": "origins:disable_regen"
+    },
+
+    "name": "Lacking Mortality",
+    "description": "No natural decay, No natural growth, Yet you always hunger."
+}

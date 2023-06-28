@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "glorporigin:slipthrough",
+        "origins:fall_immunity",
+        "glorporigin:nondegenerative",
+        "glorporigin:crystals"
+    ],
+    "icon": "minecraft:slime_ball",
+    "order": 4,
+    "impact": 3,
+    "name": "Soul Slime",
+    "description": "A creature formed from the condensation of soul across the universe."
+}
