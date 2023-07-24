@@ -4,6 +4,8 @@
         "computercraft:computer_advanced",
         "computercraft:turtle_normal",
         "computercraft:turtle_advanced",
+        "computercraft:wired_modem",
+        "computercraft:wired_modem_full",
         "#minecraft:beds",
         "create:schematic_table",
         "create:deployer"

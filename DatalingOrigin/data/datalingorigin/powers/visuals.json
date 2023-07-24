@@ -8,17 +8,43 @@
         "blue":0.75,
         "bientity_condition": {
             "type": "origins:can_see"
+        },
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "dataling.disableVisuals",
+            "compare_to": 0,
+            "comparison": "=="
         }
     },
     "partic":{
         "type": "origins:particle",
         "particle": "minecraft:glow",
         "frequency": 1,
-        "speed": 0.1
+        "speed": 0.1,
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "dataling.disableVisuals",
+            "compare_to": 0,
+            "comparison": "=="
+        }
     },
     "fake_invis": {
         "type": "origins:model_color",
-        "alpha": 0.0
+        "alpha": 0.0,
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "dataling.disableVisuals",
+            "compare_to": 0,
+            "comparison": "=="
+        }
     },
+    "enable_toggle_trigger": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players enable @s dataling.disableVisuals"
+        }
+    },
+
     "hidden":true
 }

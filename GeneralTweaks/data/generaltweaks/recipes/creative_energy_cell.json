@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "tag": "c:certus_quartz"
+    },
+    "d": {
+      "item": "ae2:fluix_dust"
+    },
+    "B": {
+      "item": "ae2:fluix_block"
+    }
+  },
+  "pattern": [
+    "CdC",
+    "dBd",
+    "CdC"
+  ],
+  "result": {
+    "item": "ae2:creative_energy_cell"
+  }
+}

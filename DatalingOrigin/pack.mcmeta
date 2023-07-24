@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 9,
+    "pack_format": 10,
     "description": "Adds the Dataling origin, an ethereal entity that can only interact with computers"
   }
 }

@@ -49,8 +49,11 @@
     "prevent_item_use": {
         "type": "origins:prevent_item_use",
         "item_condition": {
-            "type": "origins:constant",
-            "value": true
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "datalingorigin:whitelist"
+            },
+            "inverted":true
         }
     },
     "prevent_entity_use": {
@@ -131,6 +134,7 @@
                     ]
                 }
             },
+            "radius": 3,
             "bientity_action": {
                 "type": "origins:target_action",
                 "action": {
